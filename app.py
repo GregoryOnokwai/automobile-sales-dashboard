@@ -39,7 +39,7 @@ log = logging.getLogger("auto_dashboard")
 # =============================================================================
 # Configuration and constants
 # =============================================================================
-DATA_PATH = os.environ.get("DATA_PATH", "historical_automobile_sales.csv")
+DATA_PATH = os.environ.get("DATA_PATH", "https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/d51iMGfp_t0QpO30Lym-dw/automobile-sales.csv")
 HOST = os.environ.get("HOST", "127.0.0.1")
 PORT = int(os.environ.get("PORT", "8050"))
 DEBUG = os.environ.get("DASH_DEBUG", "0") == "1"
