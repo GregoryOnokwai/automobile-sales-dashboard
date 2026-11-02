@@ -7,6 +7,15 @@
 ![pandas](https://img.shields.io/badge/pandas-data%20wrangling-150458?logo=pandas&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/UI-Dash%20Bootstrap%20(Flatly)-563D7C?logo=bootstrap&logoColor=white)
 
+## Dashboard Preview
+![Overview](overview.png)
+![Overview](overview2.png)
+![Recession analysis](recession.png)
+![Recession analysis](recession2.png)
+![Economic factors](economic.png)
+![Economic factors](economic2.png)
+![Economic factors](economic3.png)
+![Geography](map.png)
 ---
 
 ## Table of Contents
@@ -215,12 +224,18 @@ Key design choices in `app.py`:
 
 ```text
 .
+.
 ├── app.py                         # Standalone Dash application
 ├── Dashboard_on_Automobile_Sales_Performance_across_Economic_Cycles.ipynb
-├── historical_automobile_sales.csv  # Dataset (default DATA_PATH for app.py)
-├── requirements.txt
-├── assets/
-│   └── screenshots/               # Dashboard screenshots for this README
+├── requirements.txt               # Python packages needed to run the app
+├── overview.png                   # Dashboard screenshots
+├── overview2.png
+├── recession.png
+├── recession2.png
+├── economic.png
+├── economic2.png
+├── economic3.png
+├── map.png
 └── README.md
 ```
 
