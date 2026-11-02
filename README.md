@@ -21,18 +21,19 @@
 ## Table of Contents
 
 1. [Project Overview](#project-overview)
-2. [Business Questions](#business-questions)
-3. [Dataset](#dataset)
-4. [Methodology](#methodology)
-5. [Dashboard Walkthrough](#dashboard-walkthrough)
-6. [Data Quality and Validation](#data-quality-and-validation)
-7. [Architecture](#architecture)
-8. [Repository Structure](#repository-structure)
-9. [Getting Started](#getting-started)
-10. [Configuration](#configuration)
-11. [Limitations](#limitations)
-12. [Future Work](#future-work)
-13. [Author](#author)
+2. [Key Findings](#key-findings)
+3. [Business Questions](#business-questions)
+4. [Dataset](#dataset)
+5. [Methodology](#methodology)
+6. [Dashboard Walkthrough](#dashboard-walkthrough)
+7. [Data Quality and Validation](#data-quality-and-validation)
+8. [Architecture](#architecture)
+9. [Repository Structure](#repository-structure)
+10. [Getting Started](#getting-started)
+11. [Configuration](#configuration)
+12. [Limitations](#limitations)
+13. [Future Work](#future-work)
+14. [Author](#author)
 
 ---
 
@@ -52,6 +53,22 @@ The project has two deliverables:
 | `app.py` | Standalone production version. Reads a local CSV or URL with `pandas.read_csv`, is configured through environment variables, and runs as a normal Dash web server. |
 
 Both files share the same analysis logic, chart builders and layout. The only difference is how they load the data.
+
+---
+
+## Key Findings
+
+Results from the full dataset (all years, vehicle types and states):
+
+| Metric | Value |
+|---|---|
+| Total units sold (1980–2023) | **6,682,707** |
+| Average units per record | **3,164.2** |
+| Recession vs. non-recession sales | **−62.5%** |
+| Average advertising spend per record | **2,879.7** |
+
+- **Recessions hit sales hard.** Average sales per record are **62.5% lower** during recessions than in non-recession periods.
+- **Advertising data needs care.** About 97% of rows repeat an advertising value within the same month and state, so ad-spend totals may double count. The dashboard uses averages for fair comparisons.
 
 ---
 
